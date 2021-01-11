@@ -7,6 +7,9 @@
   </div>
 </template>
 
+
+
+
 <script>
 import Header from './components/layout/Header.vue'
 
@@ -19,7 +22,8 @@ export default {
 </script>
 
 <style>
-#app {
- 
+#app{
+  width:80%;
+  margin:auto;
 }
 </style>
