@@ -9,20 +9,19 @@
     <a class="float-right">로그인</a>
   </div>
 
-  <div class="home-header ">
-        <div class="category-btn bg-white col-2 text-center  float-left">
+  <div class="home-header col-12">
+        <div class="category-btn bg-white col-1 text-center  float-left">
           <font-awesome-icon icon="bars" class="icons"/> 
           <h6 class="fonts">카테고리</h6>
         </div>
 
-        <div class="category-btn text-center  col-2  float-left">
-          <img src="http://image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png" width="185" height="40" alt="logo">
+        <div class="category-btn text-center col-2 float-left">
+          <img  class="logo" src="http://image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png" width="175" height="40" alt="logo">
         </div>
 
 
-
-        <div class="category-serach  col-6 float-left">
-            <div class="serach-form border border-success mt-4 ml-4">
+        <div class="category-serach col-7 float-left ">
+            <div class="serach-form border border-success mt-4 ml-5">
               <select class="select-box border">
                 <option :key="index" v-for="(item,index) in options">
                 {{item.title}}
@@ -44,18 +43,16 @@
 
         <div class="category-myPage  col-1 text-center float-left">
              <font-awesome-icon icon="user" class="icons"/>
-             <h6 class="mt-2">마이쿠팡</h6>
+             <h6 class=" mt-2 ">마이쿠팡</h6>
         </div>
 
-         <div class="category-myCart  col-1 text-center float-left">
+         <div class="category-myCart  col-1 text-center float-left ">
 
              <div class="cartData">
               {{cartData}} 
              </div>
              <font-awesome-icon icon="shopping-cart" class="icons"/>
-             <h6 class="mt-2">장바구니</h6>
-
-
+             <h6 class=" mt-2">장바구니</h6>
         </div>
 
    
@@ -88,6 +85,7 @@
 
 .home-header{
     height:115px;
+    display:inline-block;
 }
 
 .category-btn{
@@ -101,7 +99,7 @@
 
 .category-btn .fonts{
   margin-top:5px;
-  font-size:13px;
+  font-size:10px;
 }
 
 .category-serach {
@@ -152,7 +150,7 @@
    text-decoration:underline;
    color:Green;
 }
-img {
+.logo {
   margin-top: 30px;
   border : 0;  
 }
@@ -168,7 +166,7 @@ img {
 }
 
 .category-myPage h6{
-  font-size:13px;
+  font-size:10px;
 }
 
 
@@ -182,7 +180,7 @@ img {
 
 
 .category-myCart h6{
-  font-size:13px;
+  font-size:10px;
 }
 
 .cartData {

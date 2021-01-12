@@ -25,5 +25,15 @@ export default {
 #app{
   width:80%;
   margin:auto;
+  overflow:hidden;
+
 }
+
+@media screen and (min-width: 1020px) {
+  width:100%;
+  margin:auto;
+  overflow:hidden;
+}
+
+
 </style>
